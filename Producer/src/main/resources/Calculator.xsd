@@ -1,0 +1,25 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="Calculator">
+
+	<xs:element name="calculatorRequest">
+	    <xs:complexType>
+	      <xs:sequence>
+	        <xs:element name="operation" type="xs:string" />
+	        <xs:element name="numberArray">
+	          <xs:complexType>
+	            <xs:sequence>
+	              <xs:element name="number" type="xs:double"  minOccurs="2" maxOccurs="unbounded"/>
+	            </xs:sequence>
+	          </xs:complexType>
+	        </xs:element>
+	      </xs:sequence>
+	    </xs:complexType>
+ 	 </xs:element>
+  	<xs:element name="calculatorResponse">
+  		<xs:complexType>
+  			<xs:sequence>
+  				<xs:element name="operationResponse" type="xs:string"/>
+  			</xs:sequence>
+  		</xs:complexType>
+    </xs:element>
+    
+</xs:schema>

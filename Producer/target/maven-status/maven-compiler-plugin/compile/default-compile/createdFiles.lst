@@ -1,0 +1,9 @@
+com\ws\Producer\bean\ObjectFactory.class
+com\ws\Producer\SpringBootApp.class
+com\ws\Producer\bean\CalculatorRequest.class
+com\ws\Producer\service\CalculatorService.class
+com\ws\Producer\bean\CalculatorResponse.class
+com\ws\Producer\bean\CalculatorRequest$NumberArray.class
+com\ws\Producer\CalculatorConfig.class
+com\ws\Producer\CalculatorEndPoint.class
+com\ws\Producer\bean\package-info.class

@@ -1,0 +1,95 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+
+  <groupId>com.rs</groupId>
+  <artifactId>Consumer</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>calculator</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>1.8</java.version>
+  </properties>
+
+
+  	<parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.5.9.RELEASE</version>
+  	</parent>
+  	
+  <dependencies>
+       <dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <scope>test</scope>
+  </dependency>
+    <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web-services</artifactId>
+		</dependency>
+	
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+    		<groupId>wsdl4j</groupId>
+    		<artifactId>wsdl4j</artifactId>
+		</dependency>
+		<dependency>
+    <groupId>org.spockframework</groupId>
+    <artifactId>spock-core</artifactId>
+    <version>1.1-groovy-2.4</version>
+    <scope>test</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.spockframework/spock-spring -->
+<dependency>
+    <groupId>org.spockframework</groupId>
+    <artifactId>spock-spring</artifactId>
+    <version>1.1-groovy-2.4</version>
+    <scope>test</scope>
+</dependency>
+  </dependencies>
+  
+	<build>
+		<plugins>
+	
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<!-- <plugin>
+    <groupId>org.jvnet.jaxb2.maven2</groupId>
+    <artifactId>maven-jaxb2-plugin</artifactId>
+    <version>0.13.3</version>
+    <executions>
+        <execution>
+            <goals>
+                <goal>generate</goal>
+            </goals>
+        </execution>
+    </executions>
+    <configuration>
+        <schemaLanguage>WSDL</schemaLanguage>
+        <outputDirectory>${project.basedir}/src/main/java/com/rs/Consumer/bean</outputDirectory>
+        <generatePackage>${project.basedir}/src/main/java/com.rs.Consumer.bean</generatePackage>
+        <schemas>
+            <schema>
+                <url>http://localhost:8180/ws/Calculator.wsdl</url>
+            </schema>
+        </schemas>
+    </configuration>
+</plugin> -->
+		</plugins>
+	</build>
+	
+	
+</project>

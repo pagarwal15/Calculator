@@ -1,0 +1,11 @@
+com\rs\Consumer\bean\ObjectFactory.class
+com\rs\Consumer\CalculatorClient.class
+com\rs\Consumer\CalculatorConfiguration.class
+com\rs\Consumer\OperationController.class
+com\rs\Consumer\bean\CalculatorRequest$NumberArray.class
+com\rs\Consumer\bean\CalculatorResponse.class
+com\rs\Consumer\bean\CalculatorRequest.class
+com\rs\Consumer\SpringBootApp.class
+com\rs\Consumer\bean\Results.class
+com\rs\Consumer\bean\Calculator.class
+com\rs\Consumer\bean\package-info.class
